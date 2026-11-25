@@ -11,7 +11,7 @@ const SCREENSHOT_PATTERN = /^screenshot_(\d+)\.ppm\.tns$/i;
 const usb = new WebUSB({ allowAllDevices: true });
 const server = new McpServer({
   name: "devoncraft-usb-bridge",
-  version: "0.1.0"
+  version: "0.1.1"
 });
 
 let reader = null;

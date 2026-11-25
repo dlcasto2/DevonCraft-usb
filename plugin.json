@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "dlcasto4@gmail.com",
+    "name": "Devon Casto"
+  },
+  "description": "A local, read-only USB bridge for retrieving DevonCraft screenshots from a TI-Nspire, including while the game is running.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Interactive"
+        ],
+        "category": "Developer Tools",
+        "defaultPrompt": [
+          "Connect my TI-Nspire and retrieve the latest DevonCraft screenshot.",
+          "Check which DevonCraft screenshots are saved on my calculator.",
+          "Help me troubleshoot the local TI-Nspire USB connection safely."
+        ],
+        "developerName": "Devon Casto",
+        "displayName": "DevonCraft USB Bridge",
+        "longDescription": "A local, read-only USB bridge for supported TI-Nspire calculators. It retrieves DevonCraft PPM screenshots over the standard file-transfer service (0x4060), including while the game remains open after Ctrl + Shift + Period enables the temporary in-game USB transfer window. It never sends the live screen-capture command (0x4024). A compatible local MCP host and USB access on the computer connected to the calculator are required.",
+        "shortDescription": "Fetch saved game screenshots"
+      }
+    }
+  },
+  "keywords": [
+    "TI-Nspire",
+    "USB",
+    "DevonCraft",
+    "screenshot",
+    "Ndless"
+  ],
+  "name": "devoncraft-usb-bridge",
+  "version": "0.1.1"
+}
